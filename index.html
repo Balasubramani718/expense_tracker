@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - Home</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header { 
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 1rem; 
+            text-align: center;
+        }
+        main { 
+            flex: 1;
+            display: flex;
+            align-items: stretch;
+        }
+        .content-wrapper {
+            display: flex;
+            width: 100%;
+        }
+        .image-container {
+            flex: 2;  /* Increased from 1 to 2 */
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .text-container {
+            flex: 1;  /* Kept as 1, which makes it narrower relative to the image */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        .auth-buttons { 
+            margin-top: 1rem; 
+        }
+        .auth-button { 
+            padding: 0.5rem 1rem; 
+            font-size: 1rem; 
+            cursor: pointer; 
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            margin: 0 0.25rem;
+        }
+        footer { 
+            background-color: #333; 
+            color: white; 
+            padding: 1rem; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img src="images/WhatsApp Image 2024-09-20 at 18.07.41_19df6694.jpg" alt="Expense tracking illustration" />
+            </div>
+            <div class="text-container">
+                <h2>Welcome to Expense Tracker</h2>
+                <p>Take control of your finances with our easy-to-use expense tracking tool. Start managing your money more effectively today!</p>
+                <div class="auth-buttons">
+                    <button class="auth-button">Login</button>
+                    <button class="auth-button">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Expense Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
