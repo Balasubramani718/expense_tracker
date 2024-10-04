@@ -8,3 +8,4 @@ dashboard.html
 add_expenses.html
 expensechart.html
 
+These are the pages added to the web page.
